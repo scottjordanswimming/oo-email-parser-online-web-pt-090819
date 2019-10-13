@@ -14,7 +14,7 @@
 
   def parse 
     delimiters = [', ', ' ', ',']
-    x = @@emailArr.join(", ")
+    x = @emailArr.join(", ")
     y = x.split(Regexp.union(delimiters)).uniq
     
     y
